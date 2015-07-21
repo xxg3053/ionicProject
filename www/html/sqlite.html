@@ -1,0 +1,25 @@
+  <ion-view view-title="SQLITE">
+      <ion-content>
+          <div class="list">
+            <label class="item item-input">
+              <input type="text" placeholder="First Name" ng-model="people.firstname">
+            </label>
+            <label class="item item-input">
+              <input type="text" placeholder="Last Name" ng-model="people.lastname">
+            </label>  
+             <label class="item item-input">
+                <button class="button icon-left ion-home button-stable" ng-click="insert()">保存</button>
+            </label>
+            <div class="item item-divider" style="margin-top:10px">
+            总条数 {{totalCount}}
+            </div>
+          </div>
+          <div class="row" ng-repeat="p in peoples">
+            <div class="col col-33">{{p.firstname}}</div>
+            <div class="col col-33">{{p.lastname}}</div>
+            <div class="col col-33">
+              <button ng-click="delete(p.firstname)" class="button button-small button-assertive">删除</button></div>
+          </div>
+
+      </ion-content>
+</ion-view>
