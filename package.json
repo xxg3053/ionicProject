@@ -1,5 +1,5 @@
 {
-  "name": "sqlite",
+  "name": "ionicAPI",
   "version": "1.0.0",
   "description": "sqlite: An Ionic project",
   "dependencies": {
@@ -22,6 +22,7 @@
     "com.ionic.keyboard"
   ],
   "cordovaPlatforms": [
-    "android"
+    "android",
+    "ios"
   ]
 }

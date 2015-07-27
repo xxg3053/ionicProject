@@ -1,0 +1,11 @@
+<ion-view view-title="Camera">
+  <ion-content>
+   	  <button ng-click="getPhoto()" class="button button-royal button-block">Take Photo</button>
+   	  <div class="card">
+		  <div class="item item-text-wrap">
+   	  		 <span>图像地址：{{imgurl}}</span>
+		  </div>
+		</div>
+      <img ng-src="{{lastPhoto}}" style="max-width: 100%">
+  </ion-content>
+</ion-view>

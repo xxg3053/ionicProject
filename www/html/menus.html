@@ -21,17 +21,23 @@
 	    </ion-header-bar>
 	    <ion-content>
 	      <ion-list>
-	        <ion-item menu-close href="#/menus/home">
-	          Login
+	       <ion-item menu-close href="#/menus/home">
+	          Home
 	        </ion-item>
-	        <ion-item menu-close href="#/menus/home">
-	          Search
+	        <ion-item menu-close href="#/menus/list">
+	          List
 	        </ion-item>
-	        <ion-item menu-close href="#/menus/home">
-	          Browse
+	        <ion-item menu-close href="#/menus/buttons">
+	          Buttons
 	        </ion-item>
-	        <ion-item menu-close href="#/menus/home">
-	          Playlists
+	        <ion-item menu-close href="#/menus/form">
+	          Form
+	        </ion-item>
+	        <ion-item menu-close href="#/menus/tabs">
+	          Tabs
+	        </ion-item>
+	         <ion-item menu-close href="#/menus/grid">
+	          Grid
 	        </ion-item>
 	      </ion-list>
 	    </ion-content>
@@ -42,5 +48,11 @@
   </ion-tab>
   <ion-tab title="Sqlite" icon="ion-radio-waves" href="#/menus/db">
     <ion-nav-view name="menus-db"></ion-nav-view>
+  </ion-tab>
+  <ion-tab title="Camera" icon="ion-camera" href="#/menus/camera">
+    <ion-nav-view name="menus-camera"></ion-nav-view>
+  </ion-tab>
+   <ion-tab title="GPS" icon="ion-location" href="#/menus/gps">
+    <ion-nav-view name="menus-gps"></ion-nav-view>
   </ion-tab>
 </ion-tabs>
